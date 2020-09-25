@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lottery website</title>
+  
+    </head>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Bad+Script');
+         * {
+  box-sizing: border-box;
+}
+       .main{
+       position: absolute;
+        height:auto;
+        width:auto;
+        right:25%;
+        left:15%;
+        top:15%;
+        z-index:1;
+       }
+
+       .one{
+           position:absolute;
+           top:3vw;
+           left:80px;
+           z-index:2;
+        transform: rotate(270deg);
+        color: rgb(226, 199, 204);
+        font-size: 22vh; 
+       }
+
+      
+           .maintxt{
+           top:1em;
+            position:absolute;
+            font-size: 25vh; 
+            right:65px;
+            z-index:2;
+           }
+    
+
+       .subtxt{
+        top:3.2em;
+            position:absolute;
+            font-size: 16.5vh; 
+            letter-spacing:0.2em;
+            right:65px;
+            color: rgb(221, 114, 132);
+            z-index:2;
+       }
+
+       .rectangle{
+         position:absolute;
+         top:95px;
+        z-index:0;
+        right:20px;
+      
+       }
+
+       li{
+         position:relative;
+         top:-4em;
+        left:30em;
+  list-style-type: none;
+  text-decoration: none;
+  list-style-type: none;  
+  margin: 0 2vw;
+  /* our font-size will be 3% of the height of the viewport */
+  font-size: 3vh;
+  color: black;
+  padding: 2vw;
+  
+}
+
+nav{
+  
+  width: 100vw;
+  background-color:white;
+  z-index:-2;
+}
+
+ul{
+ 
+  margin: 0;
+  padding: 0px;
+  display: flex;
+  z-index:-2;
+  color:black;
+}
+a{
+  color: #b6003d;
+  text-decoration: none;
+}
+
+a:hover{
+  background-color: rgb(172, 161, 161);
+  padding:15px;
+  color: white;
+}
+
+.logo{
+width:15%;
+height:25%;
+position:absolute;
+top:0%;
+left:0.5%;
+}
+
+.number{
+  position:absolute;
+  font-size: 3vw;
+  color:black;
+  top:70vw;
+  left:27vw;
+  word-spacing:5px;
+}
+
+.two{
+  position:absolute;
+           top:68vw;
+           right: 5vw;
+           z-index:2;
+        transform: rotate(90deg);
+        color: rgb(142, 235, 159);
+        font-size: 22vh; 
+}
+
+.toon{
+  position: absolute;
+        height:auto;
+        width:auto;
+        
+        right:22%;
+        top:157%;
+        z-index:1;
+}
+
+.maintxt2{
+  position:absolute;
+           top:68vw;
+           left: 13vw;
+           font-size: 16vh; 
+  text-align:left;
+  letter-spacing:0.2em;
+}
+
+.lott{
+  position:absolute;
+  top:77vw;
+  left:12vw;
+  font-size: 16vh;
+  text-align:center;
+  color:green;
+}
+.button{
+  position:absolute;
+  top:104vw;
+  left:24vw;
+  font-size:5vh;
+  z-index:3;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+ 
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.three{
+  position:absolute;
+           top:118vw;
+           left:80px;
+           z-index:2;
+        transform: rotate(270deg);
+        color: rgb(231, 57, 109);
+        font-size: 22vh; 
+}
+
+.test{
+  position:absolute;
+  top:122vw;
+  font-size: 10vh;
+  color:black;
+ right: 12vw;
+}
+.test1{
+  position:absolute;
+  top:132vw;
+  font-size: 10vh;
+  color:black;
+ right: 15vw; 
+ color:rgb(231, 57, 109);
+}
+
+#enter{
+  position:absolute;
+  top:145vw;
+  left:52vw;
+  font-size:5vh;
+  z-index:3;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+ 
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#output{
+  position:absolute;
+  top:150vw;
+  color:black;
+}
+
+
+
+    </style>
+    <body>
+      
+
+<button type="button" class="button" onclick=myfunction()>Click</button>
+<p id="demo">this is the number: +number</p>
+
+
+<button id="enter">Click</button>
+<p id="disp"> Your lucky number is: <span id="output">____</span></p>
+
+       <img src="image.jpg" alt="image" class="main">
+
+       <img src="Group 14 (1).jpg" alt="image" class="toon">
+
+       <div>
+        <h1 class="one" data-text="01">01</h1>
+      </div>
+
+      <div>
+        <h1 class="two" data-text="02">02</h1>
+      </div>
+
+      <div>
+        <h1 class="three" data-text="03">03</h1>
+      </div>
+
+      <div>
+          <h1 class="maintxt" data-text="Lottery">Lottery</h1>
+      </div>
+
+      <div>
+        <h1 class="subtxt" data-text="Website">Website</h1>
+    </div>
+
+    <div>
+      <img src="rectangle.jpg" alt="rec" class="rectangle">
+    </div>
+    <nav>
+      <ul>
+        <li> 
+          <!-- link one -->
+          <a href="about"> About Us </a>
+        </li>
+        <li>
+          <!-- link two -->
+           <a href="#two"> Events</a>
+        </li>
+        <li>
+          <!-- link three -->
+          <a href="#three"> Winners </a>
+        </li>
+        <li>
+          <!-- link four -->
+          <a href="#contacts"> Contact Us </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <img src="logo2.jpg" alt="logo" class="logo">
+    </div>
+    <div>
+      <h1 class="maintxt2" data-text="Get your lottery number">Get your <br> <br> number</h1>
+    
+  </div>
+  <div>
+    <h1 class="lott">LOTTERY</h1> 
+    </div>
+    <div>
+      <h1 class="test" data-text="test">Enter the obtained number. </h1>
+  </div>
+
+  <div>
+    <h1 class="test1" data-text="test1"> Let's see if it's lucky or not </h1>
+</div>
+
+   
+   <script>
+     var number=Math.floor(Math.random() * 11);
+function myfunction() {
+  
+  document.getElementById("demo").innerHTML= number ;
+  alert("your lottery number is:" +number)
+}
+
+document.getElementById("enter").onclick = function(){
+	var name = prompt("Enter your number");
+  document.getElementById("output").innerText = enter;
+  if (name<5){
+    alert("Congrats, you won!")
+  }
+    else{
+      alert("oh no! Better luck next time")
+    }
+  }
+
+</script>
+
+  </body>
+</html>
